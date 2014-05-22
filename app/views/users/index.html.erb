@@ -1,0 +1,20 @@
+<h1>Listing Users</h1>
+
+      <h3>Name</h3>
+      <h3>Avi Photo</h3>
+   
+<body>
+    <% @users.each do |user| %>
+        <p><%= user.name %></p></br>
+        <img src="<%= user.avatar %>" class="index-photo"></img></br>
+        <%= link_to 'View Profile', user_path(user) %></br>
+    <% end %>
+
+    <%= link_to 'Logout', logout_path %>
+    <%= link_to 'Home', root_path %>
+    <%= link_to 'Albums Index', albums_path %>
+</body>
+
+
+ 
+

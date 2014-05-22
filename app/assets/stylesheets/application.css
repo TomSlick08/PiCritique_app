@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#photo-block {
+	margin: 0 auto;
+	float: center;
+}
+
+#intro-div {
+	text-align: center;
+	border-radius: 25px;
+	background-color: black;
+	width: 50%;
+	margin: 0 auto;
+	height: 30%;
+}
+
+#site-description {
+	text-align: center;
+	font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+	font-size: 18px;
+	color: white;
+}
+
+body {
+	background: url(http://geewall.com/mmc_uploads/5154-light-gray-gradient-1920-1200-wallpapers.jpg);
+}
+
+h1 {
+	text-align: center;
+}
+
+header {
+	background: black;
+	height: 140px;
+	width: 100%;
+	background-size: cover !important;
+}
+
+.thumbnail {
+	height: 50px;
+	width: 50px;
+	margin: 0 auto;
+}
+
+ .comment-input {
+	height: 150px;
+	width: 500px;
+}
+
+#submit-comment {
+	height: 30px;
+	width 20px;
+	border-radius: 25%;
+	text-align: center;	
+}
+
+.banner {
+	color: white;
+	font-size: 100px;
+	font-family: Impact;
+	text-align: center;
+	position: center;
+}
+
+.showcase {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	border: solid;
+	border-color: black;
+	position: center;
+}
+
+.index-photo {
+	height: 100px;
+	width: 100px;
+	border-radius: 20%;
+	position: center;
+	border: solid;
+	border-color: black;
+}
+
+.main-div {
+	text-align: center;
+	background-size: cover !important;
+}
