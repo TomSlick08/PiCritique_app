@@ -38,6 +38,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'pry'
 gem 'pry-rails'
 
+gem 'rails_12factor', group: :production
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
