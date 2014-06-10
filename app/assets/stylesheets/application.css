@@ -14,6 +14,8 @@
  *= require_self
  */
 
+
+
 #photo-block {
 	margin: 0 auto;
 	float: center;
@@ -21,44 +23,82 @@
 
 #intro-div {
 	text-align: center;
-	border-radius: 25px;
-	background-color: black;
+	background-color: white;
 	width: 50%;
 	margin: 0 auto;
-	height: 30%;
+	height: 16em;
+	border-style: solid;
+	border-radius: 10%;
+	border-color: black;
+	border-width: 3px;
 }
 
-#site-description {
-	text-align: center;
-	font-family: Copperplate / Copperplate Gothic Light, sans-serif;
-	font-size: 18px;
-	color: white;
+#welcomeheader {
+	font-size: 32px;
 }
+
+.site-description {
+	text-align: center;
+	font-family: Calibri;
+	font-size: 16px;
+	color: black;
+}
+
+.index-container-div {
+	position: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80em;
+	height: 80em;
+	text-align: center;
+}
+
+.individual-index-divs {
+	/*float: left;*/
+	padding: 15px;
+}
+
+/*#username {
+	float: left;
+}*/
 
 body {
-	background: url(http://geewall.com/mmc_uploads/5154-light-gray-gradient-1920-1200-wallpapers.jpg);
+	/*background: url(http://geewall.com/mmc_uploads/5154-light-gray-gradient-1920-1200-wallpapers.jpg);*/
+	background-color: white;
 }
 
 h1 {
 	text-align: center;
 }
 
+h3 {
+	color: black;
+}
+
 header {
-	background: black;
-	height: 140px;
+	background: white;
+	height: 15em;
 	width: 100%;
 	background-size: cover !important;
+	border-style: solid;
+	border-left: 0px;
+	border-right: 0px;
 }
 
 .thumbnail {
-	height: 50px;
-	width: 50px;
+	height: 7em;
+	width: 7em;
 	margin: 0 auto;
+	
 }
 
  .comment-input {
 	height: 150px;
 	width: 500px;
+}
+
+.root-menu-button {
+	
 }
 
 #submit-comment {
@@ -69,29 +109,28 @@ header {
 }
 
 .banner {
-	color: white;
+	color: black;
 	font-size: 100px;
-	font-family: Impact;
+	font-family: Verdana;
 	text-align: center;
 	position: center;
 }
 
 .showcase {
-	height: 250px;
-	width: 250px;
-	border-radius: 50%;
+	height: 25em;
+	width: 25em;
 	border: solid;
 	border-color: black;
 	position: center;
 }
 
 .index-photo {
-	height: 100px;
-	width: 100px;
-	border-radius: 20%;
+	height: 10em;
+	width: 10em;
 	position: center;
 	border: solid;
 	border-color: black;
+	/*float: left;*/
 }
 
 .main-div {

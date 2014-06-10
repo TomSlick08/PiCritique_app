@@ -1,14 +1,16 @@
-<h1>Listing Users</h1>
+<h1>PiCritique Club Members</h1>
 
-      <h3>Name</h3>
-      <h3>Avi Photo</h3>
    
 <body>
+    <div class="index-container-div">
     <% @users.each do |user| %>
-        <p><%= user.name %></p></br>
-        <img src="<%= user.avatar %>" class="index-photo"></img></br>
-        <%= link_to 'View Profile', user_path(user) %></br>
+        <div class="individual-index-divs"
+        <a href="/users/<%= user.id%>"> <img src="<%= user.avatar %>" class="index-photo"></a></br>
+        <a href="users/<%=user.id%>" id="username"><%= user.name %></a>
+
+        <%# link_to 'View Profile', user_path(user) %>
     <% end %>
+    </div>
 
     <%= link_to 'Logout', logout_path %>
     <%= link_to 'Home', root_path %>

@@ -51,13 +51,16 @@ class UsersController < ApplicationController
 
 	def destroy
 		@user = User.find(params[:id])
+		if current_user == @user || admin?
 		@user.destroy
 		redirect_to users_path
+		else
+		render 'show'
 	end
 
-	private
-	def user_params
-			params.require(:user).permit(:name, :avatar, :password, :password_confirmation)
+		private
+		def user_params
+				params.require(:user).permit(:name, :avatar, :password, :password_confirmation)
+		end
 	end
-
 end

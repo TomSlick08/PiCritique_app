@@ -35,13 +35,17 @@ class PhotosController < ApplicationController
 
 		def destroy
 		@photo = Photo.find(params[:id])
+		@album = Album.find(params[:album_id])
+		if admin? || current_user.id == @album.user_id 
 		@photo.destroy
 		redirect_to photos_path
+		else
+			redirect_to 'show'
 		end
 
 		private 
 		def photo_params
 				params.require(:photo).permit(:content, :caption)
 		end
-
+	end
 end
